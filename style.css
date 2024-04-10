@@ -1,0 +1,149 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+input {
+    border: 2px solid rgb(177, 173, 173); /* Blue border */
+    outline: none; /* Removes the outline on focus */
+    padding: 5px; /* Spacing inside the input */
+    font-size: 16px; /* Text size */
+    background-color:rgb(177, 173, 173); /* Light grey background */
+    border-radius: 5px; /* Rounded corners */
+  }
+select{
+    border: 2px solid rgb(177, 173, 173); /* Blue border */
+    outline: none; /* Removes the outline on focus */
+    padding: 5px; /* Spacing inside the input */
+    font-size: 16px; /* Text size */
+    background-color:rgb(177, 173, 173); /* Light grey background */
+    border-radius: 5px; /* Rounded corners */
+}
+  
+button{
+    margin-top: 20px;
+    background-color: rgb(79, 79, 228);
+    padding:10px;
+    border: 2px solid rgb(79, 79, 228);;
+    color: white;
+    font-weight: 700;
+}
+.alertAnnualIncome{
+    display: none;
+}
+.alertextraIncome{
+    display: none;
+}
+.alertDeduction{
+    display: none;
+}
+.container-left {
+    position: relative; /* Add this line */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
+    width: 28%;
+    height: 50%;
+    margin: auto;
+    padding: 20px;
+}
+#taxResult {
+    position: absolute; /* Make the tax result overlay */
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    display: none; /* Keep this to initially hide the overlay */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    z-index: 2; /* Ensure it's above other content */
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-left: 345px;
+}
+
+h5 {
+    margin: 0;
+    padding: 10px 0;
+}
+.input-cont{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* .input-field {
+    margin-bottom: 20px;
+    background-color: c;
+} */
+
+.submit-btn {
+    margin-top: 20px;
+}
+
+.info-icon {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    padding: 3px;
+    /* padding-left: ; */
+
+}
+
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 160px;
+    background-color:rgb(29, 27, 27) ;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    
+    /* Position the tooltip - adjust according to your layout */
+    position: absolute;
+    z-index: 1;
+    left: 105%; /* Adjust this as necessary */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+}
+
+
+#taxResult {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.box-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+

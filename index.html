@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+
+
+</head>
+
+<body>
+    <div id="taxResult" style="display:none;">
+        <div class="box-content">
+            <p>Your overall income will be: <br></br><span id="taxAmount">0</span></p>
+            <button id="closeButton">Close</button>
+        </div>
+    </div>
+
+    <div class="container-left">
+        <form action="">
+            <div class="input-cont">
+                <div class="tooltip-container">
+                    <h5>Enter gross annual income <span class="info-icon"><i
+                                class="fa-regular fa-circle-question"></i></span></h5>
+                    <div class="tooltip">Gross Annual income is your total salary in a year before deduction</div>
+                    <div class="alert">Please enter only numbers</div>
+                    <span class="error-icon" style="display:none">!</span>
+                    <div class="error-tooltip" style="display:none">This field is mandatory</div>
+                </div>
+
+                <input type="text" id="annualIncome" placeholder="Enter annual income">
+                <div class="alertAnnualIncome" >This is alert Div</div>
+                <div class="input-cont">
+                    <div class="tooltip-container">
+                        <h5>Enter extra income <span class="info-icon"><i
+                                    class="fa-regular fa-circle-question"></i></span></h5>
+                        <div class="tooltip">Information about any extra income</div>
+                        
+                    </div>
+                    
+                    <input type="text" id="extraIncome" placeholder="Enter the extra income">
+                    <div class="alertextraIncome" >This is alert Div</div>
+                </div>
+                <div class="input-cont">
+                    <div class="tooltip-container">
+                        <h5>Enter your age group <span class="info-icon"><i
+                                    class="fa-regular fa-circle-question"></i></span></h5>
+                        <div class="tooltip">Select your age group</div>
+                    </div>
+
+                    <select id="age">
+                        <option value="40">Less than 40</option>
+                        <option value="40-59">40 to 59</option>
+                        <option value=">=60">60 and older</option>
+                    </select>
+                </div>
+
+                <div class="input-cont">
+                    <div class="tooltip-container">
+                        <h5>Enter deduction <span class="info-icon"><i class="fa-regular fa-circle-question"></i></span>
+                        </h5>
+                        <div class="tooltip">Information about any tax deduction</div>
+                    </div>
+
+                    <div>
+                        <input type="text" id="deduction" placeholder="Enter the deduction">
+                        <div class="alertDeduction" >This is alert Div</div>
+
+                    </div>
+                </div>
+                <div class="input-cont">
+                    <button type="submit">Submit</button>
+                </div>
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
